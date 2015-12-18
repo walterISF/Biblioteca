@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Using :target with CSS3 Transitions - A Tangled in Design Demo</title>
+
+<style type="text/css">
+input{display:none}
+.ani
+    {
+    width:366px;
+    height:210px;
+    background:#181818;
+    transition:width 1s;
+    -moz-transition:width 1s; /* Firefox 4 */
+    -webkit-transition:width 1s; /* Safari and Chrome */
+    -o-transition:width 1s; /* Opera */
+    display:block;
+    }
+
+.texto{
+    opacity: 0;
+}
+
+.texto{
+    color: #fff;
+    opacity: 1;
+  transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity .1s ease-in-out;
+}
+input:checked + .ani{width:673px;}
+
+</style>
+
+</head>
+
+<body>
+<input type="checkbox" id="button">
+<label class="ani" for="button"><span class="texto">teste</span></label>
+</body>
+</html>
