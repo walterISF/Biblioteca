@@ -25,11 +25,13 @@ setTimeout(function(){$('.texto2').css('z-index','999')},100);
 
 //########################################## Elemento3
 $('#titulo3').click(function() { 
-$("#box3").animate({ 
-width: "hide", 
-opacity: "hide" 
-});
-setTimeout(function(){$('.texto3').css('z-index','999')},100); 
+//$("#box3").animate({
+//width: "hide", 
+//opacity: "hide" 
+//});
+//setTimeout(function(){$('.texto3').css('z-index','999')},100);
+  $( "#box3" ).animate({ "padding-right": "+=366px" }, "slow" );
+  setTimeout(function(){$('.texto3').css('z-index','999')},200);
 }); 
 
 //########################################## Elemento4
@@ -184,7 +186,7 @@ body{
         background-position: 366px 0px;
         float: left;
     }
-    .texto, .texto2, .texto3, .texto4{
+    .texto, .texto2{
         position: absolute;
         margin-top: 0px;
         width: 326px;
@@ -192,6 +194,17 @@ body{
         font-family: 'arial';
         z-index: -999;
         margin-left: 307px;
+        background-color: #181818;
+        height: 210px;
+        padding-left: 20px;
+    }
+    .texto3, .texto4{
+        position: absolute;
+        margin-top: 0px;
+        width: 326px;
+        color: #fff;
+        font-family: 'arial';
+        z-index: -999;
         background-color: #181818;
         height: 210px;
         padding-left: 20px;
