@@ -4,6 +4,23 @@
 <meta charset="utf-8">
 	<title></title>
 <style type="text/css">
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
 .texto{
     color: #fff;
     opacity: 0;
@@ -25,7 +42,7 @@ h2{
 }
 
 .content:first-child {
-    background: rgb(0,255,0);
+    background-color:#181818;
 }
 
 .right {
@@ -54,6 +71,32 @@ h2{
     background-image: url('img01.png');
     background-repeat: no-repeat;
 }
+#foto2 {
+    float: left;
+    width: 673px;
+    background-image: url('img02.png');
+    background-repeat: no-repeat;
+}
+#foto3 {
+    float: left;
+    width: 673px;
+    background-image: url('img02.png');
+    background-repeat: no-repeat;
+    background-position: 366px 0;
+}
+#foto4 {
+    float: left;
+    width: 673px;
+    background-image: url('img02.png');
+    background-repeat: no-repeat;
+    background-position: 366px 0;
+}
+.linhas li{
+    float: left;
+}
+.linhas{
+    list-style: none;
+}
 </style>
 <script type="text/javascript">
 
@@ -61,19 +104,49 @@ h2{
 </head>
 <body>
 
-<div id="foto">
-	<div class = 'content right'>
-        <h2>Diferencial para clientes </h2>
-        <div class="texto">
-            <p>Se diferencie dos concorrentes e ofereça um serviço especial para seus clientes mais importantes. O atedimento por vídeo torna o contato mais pessoal e atencioso, aumentando a fidelidade e percepção de valor.</p>
+<ul class="linhas">
+    <li>
+        <div id="foto">
+        	<div class = 'content right'>
+                <h2>Diferencial para clientes </h2>
+                <div class="texto">
+                    <p>Se diferencie dos concorrentes e ofereça um serviço especial para seus clientes mais importantes. O atedimento por vídeo torna o contato mais pessoal e atencioso, aumentando a fidelidade e percepção de valor.</p>
+                </div>
+        	</div>
         </div>
-	</div>
-</div>
-	<div class = 'content left'>
-        <h2>Diferencial para clientes </h2>
-        <div class="texto">
-            <p>Se diferencie dos concorrentes e ofereça um serviço especial para seus clientes mais importantes. O atedimento por vídeo torna o contato mais pessoal e atencioso, aumentando a fidelidade e percepção de valor.</p>
+    </li>
+    <li>
+        <div id="foto2">
+            <div class = 'content right'>
+                <h2>Diferencial para clientes </h2>
+                <div class="texto">
+                    <p>Se diferencie dos concorrentes e ofereça um serviço especial para seus clientes mais importantes. O atedimento por vídeo torna o contato mais pessoal e atencioso, aumentando a fidelidade e percepção de valor.</p>
+                </div>
+            </div>
         </div>
-	</div>
+    </li>
+</ul>
+<ul class="linhas">
+    <li>
+        <div id="foto3">
+            <div class = 'content left'>
+                <h2>Diferencial para clientes </h2>
+                <div class="texto">
+                    <p>Se diferencie dos concorrentes e ofereça um serviço especial para seus clientes mais importantes. O atedimento por vídeo torna o contato mais pessoal e atencioso, aumentando a fidelidade e percepção de valor.</p>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div id="foto4">
+            <div class = 'content left'>
+                <h2>Diferencial para clientes </h2>
+                <div class="texto">
+                    <p>Se diferencie dos concorrentes e ofereça um serviço especial para seus clientes mais importantes. O atedimento por vídeo torna o contato mais pessoal e atencioso, aumentando a fidelidade e percepção de valor.</p>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 </body>
 </html>
